@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <title>Monk's Cafe</title>
+    </head>
+    <body>
+      <div class="head">
+        <h1>Monk's Cafe</h1>
+        <h3>"The Coffee Shop"</h3>
+        <img id="rest" src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg">
+      </div>
+      <h1>Reservations</h1>
+      <div class="res">
+        <div class="left">
+          <h2>Make a Reservation</h2>
+          <form>
+            <input type="text" placeholder="Name">
+            <br>
+            <input type="text" placeholder="Day">
+            <br>
+            <button>Confirm Reservation</button>
+          </form>
+        </div>
+        <div class="right">
+          <h2>Existing Reservations</h2>
+          <table>
+            <thead>
+              <th>Name</th>
+              <th>Date</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="dine">
+        <h1>Come Dine with Us</h1>
+        <div id="map"></div>
+      </div>
+      <h1>Customer Reviews</h1>
+      <div class="reviews">
+        <img id="cust" src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg">
+        <p>“Big lettuce, big carrots, tomatoes like volleyballs.” <br> — Jerry Seinfeld, on The BIG Salad</p>
+      </div>
+
+      
+
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="js/main.js"></script>
+  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+    </body>
+  </html>
