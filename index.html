@@ -4,49 +4,58 @@
       <meta charset="UTF-8">
       <link rel="stylesheet" href="style.css">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-      <title>Monk's Cafe</title>
+      <title>Where's Emily?</title>
     </head>
     <body>
-      <div class="head">
-        <h1>Monk's Cafe</h1>
-        <h3>"The Coffee Shop"</h3>
-        <img id="rest" src="http://circuits-assets.generalassemb.ly/prod/asset/5475/toms-restaurant.jpg">
+     <h1>Where's Emily?</h1>
+        <h3>Find Me!</h3>
+        <img id="mainPic" src="http://www.nycapartmentszone.com/wp-content/uploads/2015/10/CoverRentals-HamiltonHeights.jpg">
       </div>
-      <h1>Reservations</h1>
-      <div class="res">
+      <h1>Contact Me</h1>
+      <div class="contact">
         <div class="left">
-          <h2>Make a Reservation</h2>
-          <form>
-            <input type="text" placeholder="Name">
-            <br>
-            <input type="text" placeholder="Day">
-            <br>
-            <button>Confirm Reservation</button>
+          <h2>Make a Request</h2>
+
+          <form id="request">
+            <input id="name" type="text" placeholder="Your Name">
+            <div class="dropdown">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Choose One<span class="caret"></span>
+                </button>
+              <ul class="dropdown-menu options">
+                <li><a>Ask a question</a></li>
+                <li><a>Make an appointment</a></li>
+                <li><a>Learn more</a></li>
+              </ul>
+            </div>
+            <button>Submit</button>
           </form>
+
         </div>
         <div class="right">
-          <h2>Existing Reservations</h2>
-          <table>
-            <thead>
-              <th>Name</th>
-              <th>Date</th>
-            </thead>
-            <tbody></tbody>
-          </table>
+          <div id="comments">
+            <img id="contactPic" src="https://i2.wp.com/fcpp.org/wp-content/uploads/contact.jpg?fit=888%2C802&amp;ssl=1">
+          </div>
         </div>
       </div>
-      <div class="dine">
-        <h1>Come Dine with Us</h1>
-        <div id="map"></div>
-      </div>
-      <h1>Customer Reviews</h1>
-      <div class="reviews">
-        <img id="cust" src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg">
-        <p>“Big lettuce, big carrots, tomatoes like volleyballs.” <br> — Jerry Seinfeld, on The BIG Salad</p>
+      <div class="location">
+        <h1>Find My Location</h1>
+          <div id="map"></div>
+        </div>
+      <h1>About Emily</h1>
+      <div class="about">
+        <img id="profilePic" src="https://emilygarvey.github.io/portfolio/images/headshot.jpg">
+        <p>Emily is a former middle school teacher and Teach For America alumna with experience creating culturally relevant social studies and writing curricula in Houston and New York City. She currently works as a Program Manager for <a href="https://www.codenation.org" target="_blank">Code Nation</a>, a tech-ed nonprofit that equips students from under-resourced high schools with the skills, experiences, and connections that together create access to careers in technology. Emily loves going on adventures around and out of the city, reading voraciously, and learning new things.</p>
       </div>
 
       
-
+  <script id="comment-template" type="text/x-handlebars-template">
+    <p data-id="{{commentId}}"></p>
+    <p>Thank you, {{name}}!</p>
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 	<script src="js/main.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9FjfqGz6LM6dPq2t-ukwEBeFwWCIRz28&callback=initMap" async defer></script>
 

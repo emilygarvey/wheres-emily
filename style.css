@@ -1,60 +1,88 @@
 body {
-	background-color: #093EA0;
-	color: white;
-	font-family: 'Ubuntu', sans-serif;
+    color: honeydew;
+    font-family: Ubuntu, sans-serif;
+    background: url(https://ak3.picdn.net/shutterstock/videos/17595793/thumb/1.jpg) 0% 0% / cover no-repeat;
+    background-repeat: no-repeat;
 }
-h1, h3{
+h1, h2, h3{
 	text-align: center;
 }
 
-#rest {
-	width: 620px;
-	height: 400px;
-	display: block;
-	margin: 0px auto;
-	border: 5px double #FD6C83;
+#mainPic {
+    width: 620px;
+    height: 400px;
+    display: block;
+    margin: 0px auto;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(202, 221, 106);
+    border-image: initial;
 }
 
-#cust {
-	width: 250px;
-	height: 150px;
-	margin: 0px 25px;
+#profilePic {
+    height: 250px;
+    margin: 0px 25px;
 }
 
-.res, .reviews {
-	display: flex;
-	justify-content: center;
+#contactPic {
+    width: 200px;
+    margin: 23px 0px 0px;
+}
+
+.about, .contact {
+    display: flex;
+    justify-content: center;
 }
 
 .left, .right {
-	border: 5px double #FD6C83;
-	padding: 10px 20px 30px 20px;
-	margin: 0px 50px;
+    background-color: darkgreen;
+    color: limegreen;
+    border-width: 5px;
+    border-style: double;
+    border-color: rgb(202, 221, 106);
+    border-image: initial;
+    padding: 10px 20px 30px;
+    margin: 0px 50px;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 input, button {
 	display: block;
 	padding: 5px auto;
 	margin: 0px auto;
 }
-table {
-	border: 1px solid lightgray;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0px 50px;
-}
+
 p {
-	width: 250px;
-	margin: 25px;
+    width: 400px;
+    margin: 25px;
 }
-.reviews {
-	width: 620px;
-	border: 5px double #FD6C83;
-	margin: 0px auto;
+.about {
+    width: 650px;
+    background-color: darkgreen;
+    color: limegreen;
+    border-width: 5px;
+    border-style: double;
+    border-color: rgb(202, 221, 106);
+    border-image: initial;
+    margin: 0px auto;
 }
 #map {
-	display: block;
-	margin: 0px auto;
-	height: 400px;
-	width: 400px;
-	border: 5px double #FD6C83;
+    display: block;
+    height: 400px;
+    width: 400px;
+    margin: 0px auto;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(202, 221, 106);
+    border-image: initial;
+}
+a {
+    color: rgb(202, 221, 106);
+}
+a:hover {
+	color: rgb(0,250,154);
 }
