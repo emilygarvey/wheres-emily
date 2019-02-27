@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <title>Where's Emily?</title>
     </head>
     <body>
@@ -16,8 +16,8 @@
         <div class="left">
           <h2>Make a Request</h2>
 
-          <form id="request">
-            <input id="name" type="text" placeholder="Your Name">
+          <form id="request"">
+            <input id="name" class="form-control" type="text" placeholder="Your Name">
             <div class="dropdown">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Choose One<span class="caret"></span>
                 </button>
@@ -26,8 +26,8 @@
                 <li><a>Make an appointment</a></li>
                 <li><a>Learn more</a></li>
               </ul>
-            </div>
-            <button>Submit</button>
+            </div>        
+              <button class="btn-success">Submit</button>
           </form>
 
         </div>

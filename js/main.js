@@ -13,14 +13,17 @@ var commentsData = {};
 
 $(".options li").on('click', function() {
   commentsData.options = $(this).text();
+  $(".btn:first-child").text($(this).text());
 });
 
 $("#request").on('submit', function(e) {
+  console.log("test");
   e.preventDefault();
   commentsData.name = $("#name").val();
   $("#name").val('');
   var commentsReference = database.ref('comments');
   commentsReference.push(commentsData);
+  $("#comments").html("<h2>Thank you for your request! Emily will be in touch with you soon.</h2>")
 });
 
 function getComments() {

@@ -1,11 +1,12 @@
 body {
-    color: honeydew;
-    font-family: Ubuntu, sans-serif;
-    background: url(https://ak3.picdn.net/shutterstock/videos/17595793/thumb/1.jpg) 0% 0% / cover no-repeat;
+    color: #f0fff0 !important;
+    background: url(https://ak3.picdn.net/shutterstock/videos/17595793/thumb/1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 h1, h2, h3{
 	text-align: center;
+	color: #f0fff0;
 }
 
 #mainPic {
@@ -27,6 +28,10 @@ h1, h2, h3{
 #contactPic {
     width: 200px;
     margin: 23px 0px 0px;
+}
+#comments {
+	width: 200px;
+	color: #f0fff0;
 }
 
 .about, .contact {
@@ -58,7 +63,7 @@ input, button {
 
 p {
     width: 400px;
-    margin: 25px;
+    margin: 25px !important;
 }
 .about {
     width: 650px;
@@ -85,4 +90,13 @@ a {
 }
 a:hover {
 	color: rgb(0,250,154);
+}
+form {
+	text-align: center;
+}
+.btn-success, .btn-default{
+	text-align:center;
+	display: block;
+	margin: 10px 60px;
+	width: 150px;
 }
